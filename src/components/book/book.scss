@@ -1,0 +1,31 @@
+.listitem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin: 10px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 4px;
+
+  &-number {
+    margin: 10px;
+  }
+  &-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-style: italic;
+  }
+  &-basced {
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  &-input {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}

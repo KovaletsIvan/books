@@ -1,0 +1,35 @@
+.infofield {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  &-countall {
+    color: #17202a;
+  }
+  &-countread {
+    color: #239b56;
+  }
+  &-notread {
+    color: #943126;
+  }
+  &-btn_deleteall {
+    background-color: #e74c3c;
+    color: #f4f6f7;
+    margin-left: auto;
+  }
+  &-btn_deleteall:hover {
+    background-color: #cb4335;
+  }
+}
+
+.info-elem {
+  margin-right: 20px;
+}
+
+.read {
+  color: #239b56;
+  text-decoration: line-through;
+}

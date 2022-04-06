@@ -1,0 +1,21 @@
+.form-books {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &_imput {
+    margin-right: auto;
+    height: 40px;
+    width: 70%;
+    font-size: 20px;
+    outline: none;
+  }
+  &_btn {
+    background-color: #5dade2;
+    color: #f4f6f7;
+  }
+  &_btn:hover {
+    background-color: #2874a6;
+  }
+}
