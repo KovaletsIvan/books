@@ -14,11 +14,13 @@ const Input = ({ onAdd }) => {
         className="form-books_imput"
         type="text"
         placeholder="Title of book"
+        required
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
       <button
         type="submit"
+        disabled={value ? false : true}
         className="btn form-books_btn"
         onClick={() => onAdd(value)}
       >
