@@ -27,7 +27,7 @@ const App = () => {
     setList((prev) =>
       prev.concat({
         title,
-        id: list.length + 1,
+        id: Date.now(),
         isRead: false,
       })
     );
