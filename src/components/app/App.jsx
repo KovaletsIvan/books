@@ -37,7 +37,7 @@ const App = () => {
   const noReadCount = list.filter((elem) => !elem.isRead).length;
   return (
     <div className="app">
-      <Input onAdd={createNewBook} />
+      <Input onAdd={createNewBook}/>
       <Infofield
         onDeleteAll={deleteAll}
         all={list.length}
