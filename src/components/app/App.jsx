@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./app.scss";
+
 import { bookslist } from "../../bookslist";
-import Books from "../books/Books";
-import Input from "../input/Input";
-import Infofield from "../infofield/Infofield";
+import { Books, Input, Infofield } from "../index";
+
+import "./app.scss";
 
 const App = () => {
   const [list, setList] = useState(bookslist);
@@ -37,7 +37,7 @@ const App = () => {
   const noReadCount = list.filter((elem) => !elem.isRead).length;
   return (
     <div className="app">
-      <Input onAdd={createNewBook}/>
+      <Input onAdd={createNewBook} />
       <Infofield
         onDeleteAll={deleteAll}
         all={list.length}

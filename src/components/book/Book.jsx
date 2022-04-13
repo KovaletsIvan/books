@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./book.scss";
 
 const Book = ({ title, index, id, onDelete, isRead, onCheck }) => {
