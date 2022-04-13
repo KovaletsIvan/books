@@ -8,6 +8,8 @@ import "./app.scss";
 const App = () => {
   const [list, setList] = useState(bookslist);
 
+  const noDate = <div className="nodata">No Data!</div>;
+
   const deleteItem = (id) => {
     setList((prew) => prew.filter((book) => id !== book.id));
   };
@@ -44,7 +46,11 @@ const App = () => {
         read={readCount}
         noRead={noReadCount}
       />
-      <Books list={list} onDelete={deleteItem} onCheck={check} />
+      {list.length > 0 ? (
+        <Books list={list} onDelete={deleteItem} onCheck={check} />
+      ) : (
+        noDate
+      )}
     </div>
   );
 };
